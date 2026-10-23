@@ -1,0 +1,17 @@
+{
+  "mature_cohort_leads": 14634,
+  "signed_contracts": 1469,
+  "lead_to_signed_pct": 10.0,
+  "biggest_drop_step": "Appointment",
+  "best_channel_by_cac": "Website Organic",
+  "best_channel_cac_eur": 121.0,
+  "worst_channel_by_cac": "Comparison Portal",
+  "worst_channel_cac_eur": 767.0,
+  "appt_rate_contacted_under_1h_pct": 52.6,
+  "appt_rate_contacted_over_3d_pct": 15.7,
+  "signed_rate_offer_within_3d_pct": 49.5,
+  "signed_rate_offer_over_7d_pct": 22.3,
+  "weakest_team": "Team West",
+  "weakest_team_lead_to_signed_pct": 5.6,
+  "best_team_lead_to_signed_pct": 12.7
+}

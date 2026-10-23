@@ -1,0 +1,15 @@
+{
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests"],
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "sqltools.connections": [
+    {
+      "name": "funnel.db",
+      "driver": "SQLite",
+      "database": "${workspaceFolder}/data/funnel.db"
+    }
+  ]
+}

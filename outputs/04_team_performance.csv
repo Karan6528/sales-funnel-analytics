@@ -1,0 +1,5 @@
+team,leads,contacted_within_4h_pct,avg_hours_to_contact,contact_to_appt_pct,appt_to_offer_pct,avg_days_appt_to_offer,offers_over_7_days_pct,offer_to_signed_pct,signed,lead_to_signed_pct
+Team East,3294,42.3,12.7,38.1,77.8,3.1,5.3,47.6,419,12.7
+Team South,4087,35.7,14.8,37.4,76.7,3.0,5.5,45.1,476,11.6
+Team North,3149,31.4,16.2,37.3,74.8,3.5,9.0,43.1,344,10.9
+Team West,4104,16.7,23.7,34.0,60.0,6.4,37.8,30.5,230,5.6

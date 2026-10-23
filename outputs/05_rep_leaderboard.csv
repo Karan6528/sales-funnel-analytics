@@ -1,0 +1,25 @@
+rank,rep_id,rep_name,team,leads,offers,signed,offer_to_signed_pct,vs_team_avg_pp,signed_value_eur
+1,R003,Lea Yilmaz,Team East,572,150,90,60.0,12.4,2010590.0
+2,R024,Mia Schwarz,Team South,683,194,101,52.1,7.0,2268260.0
+3,R006,Elias Neumann,Team East,533,131,68,51.9,4.3,1464920.0
+4,R005,Lea Wolf,Team East,553,158,80,50.6,3.0,1737830.0
+5,R011,Julia Hoffmann,Team North,506,126,62,49.2,6.2,1406380.0
+6,R010,Ali Schwarz,Team North,505,144,70,48.6,5.6,1578090.0
+7,R021,David Lehmann,Team South,646,164,77,47.0,1.9,1625390.0
+8,R020,Felix Koehler,Team South,704,171,77,45.0,-0.1,1698570.0
+9,R001,Mia Lehmann,Team East,492,110,48,43.6,-4.0,1137010.0
+9,R019,Max Richter,Team South,674,163,71,43.6,-1.5,1562610.0
+11,R004,Julia Zimmermann,Team East,560,175,75,42.9,-4.8,1723080.0
+12,R007,Clara Koch,Team North,559,131,56,42.7,-0.3,1251860.0
+12,R023,Lea Krueger,Team South,668,185,79,42.7,-2.4,1826790.0
+14,R012,Jonas Krueger,Team North,550,142,59,41.5,-1.5,1250030.0
+15,R022,Anna Richter,Team South,712,178,71,39.9,-5.2,1643140.0
+16,R008,Jonas Maier,Team North,523,110,42,38.2,-4.8,918020.0
+17,R009,Felix Lehmann,Team North,506,145,55,37.9,-5.1,1204620.0
+18,R002,Nina Becker,Team East,584,157,58,36.9,-10.8,1154660.0
+19,R014,Lukas Fuchs,Team West,689,120,43,35.8,5.2,987910.0
+20,R013,Sophie Krause,Team West,678,114,38,33.3,2.7,847390.0
+21,R017,Sophie Schwarz,Team West,665,127,41,32.3,1.7,884400.0
+22,R015,David Hoffmann,Team West,695,124,39,31.5,0.9,795990.0
+23,R018,David Schwarz,Team West,694,145,44,30.3,-0.3,912160.0
+24,R016,Noah Klein,Team West,683,123,25,20.3,-10.3,458840.0

@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "qwtel.sqlite-viewer",
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-sqlite",
+    "mechatroner.rainbow-csv"
+  ]
+}

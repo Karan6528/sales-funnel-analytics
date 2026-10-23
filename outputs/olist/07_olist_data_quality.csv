@@ -1,0 +1,8 @@
+check_name,value,comment
+Leads (MQLs) in file,8000,Jun 2017 - May 2018
+Deals in file,842,Won Dec 2017 - Nov 2018: earlier deals missing
+Deals without a matching lead,0,Join integrity check
+"Leads with origin ""unknown"" or missing",1159,"Tracking gap: ~14% of leads, and they convert best"
+Deals won before first contact,1,Impossible date - excluded from timing
+Deals with declared monthly revenue = 0,797,Revenue field mostly empty - not used for value analysis
+Deals missing has_company,779,Field ~92% empty - not used

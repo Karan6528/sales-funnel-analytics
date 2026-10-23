@@ -1,0 +1,7 @@
+stage_order,stage,volume,step_conversion_pct,overall_conversion_pct,lost_at_this_step
+1,Lead,14634,100.0,100.0,0
+2,Contacted,13206,90.2,90.2,1428
+3,Appointment,4830,36.6,33.0,8376
+4,Offer,3487,72.2,23.8,1343
+5,Signed,1469,42.1,10.0,2018
+6,Installed,1348,91.8,9.2,121

@@ -1,0 +1,5 @@
+time_to_close,deals,share_pct,cumulative_pct
+1) 0-7 days,282,36.2,36.2
+2) 8-30 days,269,34.5,70.6
+3) 31-90 days,126,16.2,86.8
+4) over 90 days,103,13.2,100.0

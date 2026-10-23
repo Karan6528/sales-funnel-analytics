@@ -1,0 +1,13 @@
+lead_month,mqls,deals,conversion_pct,note
+2017-06,4,0,0.0,excluded (deal data incomplete)
+2017-07,239,2,0.8,excluded (deal data incomplete)
+2017-08,386,9,2.3,excluded (deal data incomplete)
+2017-09,312,7,2.2,excluded (deal data incomplete)
+2017-10,416,14,3.4,excluded (deal data incomplete)
+2017-11,445,18,4.0,excluded (deal data incomplete)
+2017-12,200,11,5.5,excluded (deal data incomplete)
+2018-01,1141,152,13.3,in window
+2018-02,1028,149,14.5,in window
+2018-03,1174,167,14.2,in window
+2018-04,1352,183,13.5,in window
+2018-05,1303,130,10.0,in window
