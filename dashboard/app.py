@@ -5,6 +5,7 @@ Run from the project root:
     streamlit run dashboard/app.py
 """
 
+import sqlite3
 import subprocess
 import sys
 from pathlib import Path
@@ -22,23 +23,51 @@ BLUE = "#2A6F97"
 st.set_page_config(page_title="Solar Sales Funnel", page_icon="☀️", layout="wide")
 
 
+REQUIRED_TABLES = {"leads", "sales_reps", "marketing_spend", "olist_mql", "olist_deals"}
+
+
+def db_is_complete() -> bool:
+    """True only if the database file exists AND has every table the app needs."""
+    if not m.DB_PATH.exists():
+        return False
+    try:
+        with sqlite3.connect(m.DB_PATH) as con:
+            tables = {r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+    except sqlite3.Error:
+        return False
+    return REQUIRED_TABLES <= tables
+
+
+@st.cache_resource(show_spinner="Building database (first start only) ...")
+def build_database() -> str:
+    """Build data/funnel.db from the CSVs in the repo (fresh clone, Streamlit Cloud).
+
+    cache_resource makes this run once per server, even if several visitors
+    open the app at the same time. Returns "" on success or the error text.
+    """
+    if db_is_complete():
+        return ""
+    m.DB_PATH.unlink(missing_ok=True)          # remove a half-built database
+    for script in ["load_to_sqlite.py", "load_olist.py"]:
+        result = subprocess.run([sys.executable, str(m.ROOT / "src" / script)],
+                                cwd=m.ROOT, capture_output=True, text=True)
+        if result.returncode != 0:
+            m.DB_PATH.unlink(missing_ok=True)
+            return f"{script} failed:\n{result.stderr[-1500:]}"
+    return "" if db_is_complete() else "Database built but tables are missing."
+
+
 @st.cache_data
 def get_data():
     return m.load_data()
 
 
-if not m.DB_PATH.exists():
-    # e.g. a fresh clone or Streamlit Cloud: build the db from the committed CSVs
-    with st.spinner("Building database ..."):
-        for script in ["load_to_sqlite.py", "load_olist.py"]:
-            result = subprocess.run([sys.executable, str(m.ROOT / "src" / script)],
-                                    cwd=m.ROOT, capture_output=True, text=True)
-            if result.returncode != 0:
-                break
-    if result.returncode != 0:
-        st.error("Could not build the database. Run `python run_all.py` from the "
-                 f"project root.\n\n```\n{result.stderr[-1500:]}\n```")
-        st.stop()
+error = build_database()
+if error:
+    build_database.clear()                     # try again on the next page load
+    st.error("Could not build the database. Check that the `data/processed` and "
+             f"`data/real_olist` folders are in the repository.\n\n```\n{error}\n```")
+    st.stop()
 
 leads_all, reps, spend_all = get_data()
 
