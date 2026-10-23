@@ -1,6 +1,7 @@
 # Sales Funnel Analytics
 
 ![pipeline](https://github.com/Karan6528/sales-funnel-analytics/actions/workflows/pipeline.yml/badge.svg)
+
 **Live dashboard:** [sales-funnel-analytics-karan.streamlit.app](https://sales-funnel-analytics-karan.streamlit.app/) (if it's been asleep, click the wake-up button and give it a minute)
 
 I built this project to practise the kind of work a sales or operations analyst does every week: take a messy export, figure out where customers drop out of the funnel, and turn that into a report a manager can act on. Most of the analysis is in SQL and Excel, with some Python to glue it together and a small Streamlit dashboard on top.
